@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <!-- Configuration titre page et type charset utilisé pour bonne lecture des symboles-->
+        <title>Recette gateau au chocolat</title>
+        <meta charset="UTF-8">
+        <!-- Introduction responsive design : prendre en compte la largeur de l'écran -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- Code CSS dans style ou dans un autre fichier -->
+        <link rel="stylesheet" href="recette_gateau_chocolat_rd.css">
+
+    </head>
+        
+
+    <body>
+       
+        
+        <div class="contenu">
+            <!-- Titre centré et gras -->
+            <div class="centre categorie">
+                <p class="categorie">Recette</p>
+            </div>
+            
+            <h1><b>Gateau au chocolat</b></h1>
+
+            <!-- Séparateur -->
+            <div class="separateur"></div>
+
+            <!-- Description de la recette dans un paragraphe dans une div pour avoir le bon style avec la bonne largeur d'élément -->
+            <div class="centre">
+                <p class="description">"Cette recette facile de gateau au chocolat est un grand classique. Elle fera plaisir aux gourmands."</p>
+            </div>
+            
+            <div class="position">    
+                <!-- Ajout image de gateau au chocolat (fichier local dans le même dossier que la page html) et ajuster la taille de l'image -->
+                    <img class="centre info" src="Gateau_chocolat.jpg" height="50%" width="50%">
+
+                <!-- Création table -->
+                <table class="info">
+                    <!-- Création première ligne "header"-->
+                    <tr>
+                        <th>Difficulté</th>
+                        <th>Temps total</th>
+                        <th>Préparation</th>
+                        <th>Repos</th>
+                        <th>Cuisson</th>
+                    </tr>
+                    <!-- Création deuxième ligne "data" (même nombre de td que de th pour avoir le même nombre de colonnes)-->
+                    <tr>
+                        <td>Facile</td>
+                        <td>35 min</td>
+                        <td>10 min</td>
+                        <td>0 min</td>
+                        <td>25 min</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <!-- Ingrédients titre h2 puis liste non ordonnée -->
+                <div class="colonne1 colonne">
+                    <h2><b>Ingrédients</b></h2>
+                    <div class="ingredients">
+                        <p>Chocolat patissier : 200g</p>
+                        <p>Farine : 50g</p>
+                        <p>Sucre en poudre : 100g</p>
+                        <p>Beurre : 100g</p>
+                        <p>Oeufs : 3</p>
+                    </div>
+                </div>
+                
+                <!-- Préparation puis liste ordonnée -->
+                <div class="colonne2 colonne">
+                    <h2><b>Préparation</b></h2>
+                    <!--
+                    <ol>
+                        <li>Préchauffer votre four à <span style="color :teal"> 180° (thermostat 6).</span> Dans une casserole, faites fondre le chocolat et le beurre coupé en morceaux à feu très doux.</li>
+                        <li>Dans un saladier, ajouter le sucre, les oeufs, la farine. Mélangez.</li>
+                        <li>Ajouter le mélange chocolat/beurre. Mélangez bien.</li>
+                        <li>Beurrez et farinez votre moule puis versez-y la pâte à gateau.</li>
+                        <li>Faire cuire au four environ 25 minutes.</li>
+                        <li>A la sortie du four le gateau ne paraît pas assez cuit. C'est normal, laissez-le refroidir puis démoulez-le.</li>
+                    </ol>
+                    -->
+                    <table class="preparation">
+                        <tr>
+                            <td><p class="numero">1</p></td>
+                            <td class="preparation_etape">Préchauffer votre four à 180° (thermostat 6). Dans une casserole, faites fondre le chocolat et le beurre coupé en morceaux à feu très doux.</td>
+                        </tr>
+                        <tr>
+                            <td><p class="numero">2</p></td>
+                            <td class="preparation_etape">Dans un saladier, ajouter le sucre, les oeufs, la farine. Mélangez.</td>
+                        </tr>
+                        <tr>
+                            <td><p class="numero">3</p></td>
+                            <td class="preparation_etape">Ajouter le mélange chocolat/beurre. Mélangez bien.</td>
+                        </tr>
+                        <tr>
+                            <td><p class="numero">4</p></td>
+                            <td class="preparation_etape">Beurrez et farinez votre moule puis versez-y la pâte à gateau.</td>
+                        </tr>
+                        <tr>
+                            <td><p class="numero">5</p></td>
+                            <td class="preparation_etape">Faire cuire au four environ 25 minutes.</td>
+                        </tr>
+                        <tr>
+                            <td><p class="numero">6</p></td>
+                            <td class="preparation_etape">A la sortie du four le gateau ne paraît pas assez cuit. C'est normal, laissez-le refroidir puis démoulez-le.</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
